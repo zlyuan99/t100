@@ -1,0 +1,149 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header 样式 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Banner 样式 */
+.banner {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.slider img.active {
+    display: block;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.controls span {
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+/* 业务介绍区样式 */
+.services {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-list {
+    display: flex; /* 使用 Flexbox 实现并排布局 */
+    justify-content: space-between; /* 平均分布间距 */
+    flex-wrap: wrap; /* 允许换行 */
+}
+
+.service-item {
+    width: calc(33.33% - 20px); /* 每个业务项占三分之一宽度，减去间距 */
+    margin: 10px; /* 上下左右间距 */
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    border-radius: 8px; /* 圆角边框 */
+}
+
+.service-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* 响应式设计：在小屏幕设备上改为单列布局 */
+@media (max-width: 768px) {
+    .service-item {
+        width: 100%; /* 占满整个宽度 */
+        margin: 10px 0; /* 只保留上下间距 */
+    }
+}
+
+/* 关于我们样式 */
+.about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Footer 样式 */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
