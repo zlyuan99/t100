@@ -45,13 +45,27 @@
                     <img src="./images/slide-1.png" alt="Image 1">
                 </div>
                 <div class="marquee-item">
-                    <img src="./images/silde-2.png" alt="Image 2">
+                    <!-- 修正拼写错误 -->
+                    <img src="./images/slide-2.png" alt="Image 2">
                 </div>
                 <div class="marquee-item">
                     <img src="./images/slide-3.png" alt="Image 3">
                 </div>
             </div>
         </section>
+        <script>
+            const container = document.querySelector('.marquee-container');
+            const items = document.querySelectorAll('.marquee-item');
+            const itemWidth = items[0].offsetWidth;
+            let currentIndex = 0;
+
+            function slide() {
+                currentIndex = (currentIndex + 1) % items.length;
+                container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+            }
+
+            setInterval(slide, 3000); // 每 3 秒切换一次图片
+        </script>
 
         <!-- 我们的优势 -->
         <section class="advantages">
