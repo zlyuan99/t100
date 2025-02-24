@@ -78,11 +78,14 @@
                 min-width: 100%; /* 确保每个图片项的宽度 */
                 box-sizing: border-box;
                 padding: 0 10px; /* 可根据需要调整图片之间的间距 */
+                height: 200px; /* 设置图片项的高度 */
             }
 
            .marquee-item img {
                 width: 100%;
-                height: auto;
+                height: 100%; /* 设置图片高度为 100%，填充图片项 */
+                object-fit: cover; /* 保持图片比例并填充容器 */
+                border-radius: 10px; /* 设置图片的圆角半径，可根据需要调整 */
             }
 
             @keyframes marquee {
