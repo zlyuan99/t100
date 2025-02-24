@@ -51,8 +51,49 @@
                 <div class="marquee-item">
                     <img src="./images/slide-3.png" alt="Image 3">
                 </div>
+                <!-- 为了实现无缝滚动，复制一份图片 -->
+                <div class="marquee-item">
+                    <img src="./images/slide-1.png" alt="Image 1">
+                </div>
+                <div class="marquee-item">
+                    <img src="./images/slide-2.png" alt="Image 2">
+                </div>
+                <div class="marquee-item">
+                    <img src="./images/slide-3.png" alt="Image 3">
+                </div>
             </div>
         </section>
+        <style>
+           .marquee {
+                width: 100%;
+                overflow: hidden;
+            }
+
+           .marquee-container {
+                display: flex;
+                animation: marquee 10s linear infinite; /* 动画持续时间可根据需要调整 */
+            }
+
+           .marquee-item {
+                min-width: 100%; /* 确保每个图片项的宽度 */
+                box-sizing: border-box;
+                padding: 0 10px; /* 可根据需要调整图片之间的间距 */
+            }
+
+           .marquee-item img {
+                width: 100%;
+                height: auto;
+            }
+
+            @keyframes marquee {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%); /* 这里的 -50% 是因为复制了一份图片，可根据实际情况调整 */
+                }
+            }
+        </style>
         <script>
             const container = document.querySelector('.marquee-container');
             const items = document.querySelectorAll('.marquee-item');
