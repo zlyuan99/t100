@@ -87,7 +87,7 @@ body {
 /* 业务介绍区样式 */
 .services {
     padding: 50px 0;
-    background-color: #f9f9f9;
+
 }
 
 .services h2 {
@@ -103,6 +103,7 @@ body {
 
 .service-item {
     width: calc(33.33% - 20px); /* 每个业务项占三分之一宽度，减去间距 */
+    height: 100px;
     margin: 10px; /* 上下左右间距 */
     text-align: center;
     background-color: #fff;
@@ -132,6 +133,7 @@ body {
 /* 关于我们样式 */
 .about {
     padding: 50px 0;
+    color: #666;
     text-align: center;
 }
 

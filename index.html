@@ -1,170 +1,126 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>T100 站点数解决方案</title>
-    <meta name="keywords" content="T100,TIPTOP,TOPGP,T100用户数,T100站点数,TipTOP用户数,TIPTOP站点数,T100注册">
-    <meta name="description" content="T100,TIPTOP ERP用户数破解,T100授权注册,T100站点数解决方案">
+    <title>企业官网</title>
+    <link rel="stylesheet" href="/styles.css">
     <link rel="shortcut icon" href="./webico-001.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./lib/UePageReset.css">
-    <link rel="stylesheet" href="./lib/UePage.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="./lib/UePage.umd.min.js"></script>
 </head>
+<body>
 
-<body class="ue-builder-v4">
-    <div id="ue-page" class="ue-page-fa2f2 page-editor-d6a06">
-        <!-- 功能介绍 -->
-        <section class="banner">
-            <h1 style="text-align: center; font-size: 60px; color: #14151A;">
-                T100 / TIPTOP<br>用户数专业第三方解决方案
-            </h1>
-            <p style="text-align: center; font-size: 16px; color: rgba(20, 21, 26, 0.6);">
-                最专业T100 ERP和Tiptop GP 5.x的站点数第三方解决方案<br>
-                欢迎交流咨询联系QQ或邮件 crontab@qq.com 免费测试！
-            </p>
-            <div style="text-align: center; margin-top: 20px;">
-                <a href="./images/1567074726390.png" target="_blank"
-                    style="display: inline-block; padding: 10px 30px; background-color: #3452FF; color: white; border-radius: 100px; text-decoration: none;">
-                    View more
-                </a>
-                <a href="./images/1567074726390.png" target="_blank"
-                    style="display: inline-block; padding: 10px 30px; background-color: white; color: #14151A; border: 1px solid rgba(20, 21, 26, 0.1); border-radius: 100px; text-decoration: none;">
-                    Watch tutorials
-                </a>
+
+     <!-- 功能介绍 -->
+     <section class="banner">
+        <h1 style="text-align: center; font-size: 60px; color: #14151A;">
+            T100 / TIPTOP<br>用户数专业第三方解决方案
+        </h1>
+        <p style="text-align: center; font-size: 16px; color: rgba(20, 21, 26, 0.6);">
+            最专业T100 ERP和Tiptop GP 5.x的站点数第三方解决方案<br>
+            欢迎交流咨询联系QQ或邮件 crontab@qq.com 免费测试！
+        </p>
+        <div style="text-align: center; margin-top: 20px;">
+        
+            <a href="./images/1567074726390.png" target="_blank"
+                style="display: inline-block; padding: 10px 30px; background-color: white; color: #14151A; border: 1px solid rgba(20, 21, 26, 0.1); border-radius: 100px; text-decoration: none;">
+                详细了解
+            </a>
+        </div>
+    </section>
+<p><br></p>
+
+    <!-- 图片展示 -->
+    <section class="image-showcase">
+        <div class="image-container">
+            <div class="image-item">
+                <img src="./images/slide-1.png" alt="Image 1">
             </div>
-        </section>
-
-        <!-- 图片轮播 -->
-        <section class="marquee">
-            <div class="marquee-container">
-                <div class="marquee-item">
-                    <img src="./images/slide-1.png" alt="Image 1">
-                </div>
-                <div class="marquee-item">
-                    <!-- 修正拼写错误 -->
-                    <img src="./images/slide-2.png" alt="Image 2">
-                </div>
-                <div class="marquee-item">
-                    <img src="./images/slide-3.png" alt="Image 3">
-                </div>
-                <!-- 为了实现无缝滚动，复制一份图片 -->
-                <div class="marquee-item">
-                    <img src="./images/slide-1.png" alt="Image 1">
-                </div>
-                <div class="marquee-item">
-                    <img src="./images/slide-2.png" alt="Image 2">
-                </div>
-                <div class="marquee-item">
-                    <img src="./images/slide-3.png" alt="Image 3">
-                </div>
+            <div class="image-item">
+                <img src="./images/slide-2.png" alt="Image 2">
             </div>
-        </section>
-        <style>
-           .marquee {
-                width: 100%;
-                overflow: hidden;
-            }
+            <div class="image-item">
+                <img src="./images/slide-3.png" alt="Image 3">
+            </div>
+        </div>
+    </section>
+    <style>
+       .image-showcase {
+            width: 100%;
+            margin: 20px 0; /* 上下外边距 */
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+        }
 
-           .marquee-container {
-                display: flex;
-                animation: marquee 10s linear infinite; /* 动画持续时间可根据需要调整 */
-            }
+       .image-container {
+            display: flex;
+            gap: 20px; /* 图片之间的间距 */
+            max-width: 1200px; /* 容器最大宽度 */
+            width: 90%; /* 容器宽度 */
+            margin: 0 auto; /* 水平居中 */
+        }
 
-           .marquee-item {
+       .image-item {
+            flex: 1; /* 平均分配宽度 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+            border-radius: 15px; /* 圆角 */
+            overflow: hidden; /* 隐藏溢出内容 */
+            transition: transform 0.3s ease; /* 过渡效果 */
+        }
 
-                box-sizing: border-box;
-                padding: 0 10px; /* 可根据需要调整图片之间的间距 */
-                height: 400px; /* 设置图片项的高度 */
-                width: 600px;
-            }
-            
+       .image-item:hover {
+            transform: translateY(-5px); /* 悬停时上移 */
+        }
 
-           .marquee-item img {
-                width: 100%;
-                height: 100%; /* 设置图片高度为 100%，填充图片项 */
-                object-fit: cover; /* 保持图片比例并填充容器 */
-                border-radius: 10px; /* 设置图片的圆角半径，可根据需要调整 */
-            }
+       .image-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 保持图片比例并填充容器 */
+        }
+    </style>
 
-            @keyframes marquee {
-                0% {
-                    transform: translateX(0);
-                }
-                100% {
-                    transform: translateX(-50%); /* 这里的 -50% 是因为复制了一份图片，可根据实际情况调整 */
-                }
-            }
-        </style>
-        <script>
-            const container = document.querySelector('.marquee-container');
-            const items = document.querySelectorAll('.marquee-item');
-            const itemWidth = items[0].offsetWidth;
-            let currentIndex = 0;
-
-            function slide() {
-                currentIndex = (currentIndex + 1) % items.length;
-                container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-            }
-
-            setInterval(slide, 3000); // 每 3 秒切换一次图片
-        </script>
-
-        <!-- 我们的优势 -->
-        <section class="advantages" style="background-color: #3452FF; padding: 40px 0;">
-            <h2 style="text-align: center; font-size: 60px; color: white;">我们的优势</h2>
-            <div style="display: flex; justify-content: space-around; margin-top: 20px; flex-wrap: wrap;">
-                <div style="text-align: center; padding: 20px; width: 30%; min-width: 250px;">
-                    <p style="font-size: 36px; color: white;">简单易用</p>
-                    <p style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">保持原有操作习惯，客户端无需安装任何附加插件。</p>
+    <!-- 业务介绍区 -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 40px; ">我们的优势</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>简单易用</h3>
+                    <p>保持原有操作习惯，客户端无需安装任何附加插件。</p>
                 </div>
-                <div style="text-align: center; padding: 20px; width: 30%; min-width: 250px;">
-                    <p style="font-size: 36px; color: white;">成熟稳定</p>
-                    <p style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">2011发布至今，未发生一起数据问题或系统故障。</p>
+                <div class="service-item">
+                    <h3>成熟稳定</h3>
+                    <p>2011发布至今，未发生一起数据问题或系统故障。</p>
                 </div>
-                <div style="text-align: center; padding: 20px; width: 30%; min-width: 250px;">
-                    <p style="font-size: 36px; color: white;">快捷部署</p>
-                    <p style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">无感知的快捷部署，不影响当前用户作业。</p>
+                <div class="service-item">
+                    <h3>快捷部署</h3>
+                    <p>无感知的快捷部署，不影响当前用户作业。</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 关于我们 -->
-        <section class="about-us">
-            <h2 style="text-align: center; font-size: 48px; color: #14151A;">关于我们</h2>
-            <p style="text-align: center; font-size: 18px; color: rgba(20, 21, 26, 0.6);">
-                专业的T100站点数第三方解决方案，经过华东、华南、西南等诸多客户长期验证。<br>
-                不少客户换T100之后，仍然再次合作，在业内有良好的口碑效应。
-            </p>
-        </section>
+    <!-- 文本说明区 -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 style="font-size: 40px;">关于我们</h2>
+      <br>
+            <p>专业的T100站点数第三方解决方案，经过华东、华南、西南等诸多客户长期验证。<br>
+                不少客户换T100之后，仍然再次合作，在业内有良好的口碑效应。</p>
+        </div>
+    </section>
 
-        <!-- 联系我们 -->
-        <section class="contact-us">
-            <h2 style="text-align: center; font-size: 60px; color: #14151A;">联系我们</h2>
-            <p style="text-align: center; font-size: 36px; color: #14151A;">Email: crontab@qq.com</p>
-            <p style="text-align: center; font-size: 36px; color: rgba(20, 21, 26, 0.6);">QQ：992750244</p>
-            <div style="text-align: center; margin-top: 20px;">
-                <p style="font-size: 18px; color: #14151A;"><strong>微信号码</strong></p>
-                <p style="font-size: 20px; color: #14151A;">林经理：1388886688</p>
-            </div>
-        </section>
-    </div>
+    <!-- 页面末尾 联系我们 -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <h2>联系我们</h2>
+            <p>地址：中国.深圳</p>
+            <p>VX：992750244</p>
+            <p>Email: crontab@qq.com</p>
+        </div>
+    </footer>
 
-    <script>
-        new UePage().init({
-            initForm: {
-                getCodeImgUrl() {
-                    return "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAfBAMAAADn3KVYAAAAG1BMVEX09PSOwQDB2nrN4Jja57e01Fuaxx7n7dWnzT3pYkJOAAABNElEQVQ4je2TPXLCMBCFRaLYLrNgDCW+Ae4oofFQxjM5AJoUtO7ShptntZK1K7ke2hR5BbIf+rT/slL/CmqBtMHHk2k+vXu50SKcPNPb9cO5hhjpZJhaaVr3ZFZgGenM9QYH3Pc16gcc8bU0xAgnl+AWS2gI/sHfDogRzlwa7rhxbSPAu1JX2FI97GRUcHyDO9rm6HoQnFxq+2hHe1BPmRJ2nCVm/60Eo/P1vPAMKji7w2+pk2gF4/Q4+CyZGfLzsZ2eIt4TJjiJTChnaMaECU4srrIKh05MtRDGXhxSacKhnhFOrGJqQc/980yfu9VWF9+ZV1gHzzHSidX6PzoxCcd0+dmgHjUtGmr2iImcWP5CFfJQYorFMIq+FfporHbMRE6k0o/HzBizyGjfT5gxsMj8Pf0C2KM4RM5n5rgAAAAASUVORK5CYIIg";
-                },
-                formSubmit: () => {
-                    return Promise.resolve();
-                },
-            },
-        });
-    </script>
+    <script src="/script.js"></script>
 </body>
-
 </html>
+
