@@ -57,33 +57,6 @@ body {
     overflow: hidden;
 }
 
-.slider img {
-    width: 100%;
-    height: auto;
-    display: none;
-}
-
-.slider img.active {
-    display: block;
-}
-
-.controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-
-.controls span {
-    font-size: 36px;
-    color: #fff;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-}
-
 /* 业务介绍区样式 */
 .services {
     padding: 50px 0;
@@ -95,30 +68,41 @@ body {
     margin-bottom: 30px;
 }
 
+/* 服务项样式 */
 .service-list {
-    display: flex; /* 使用 Flexbox 实现并排布局 */
-    justify-content: space-between; /* 平均分布间距 */
-    flex-wrap: wrap; /* 允许换行 */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .service-item {
-    width: calc(33.33% - 20px); /* 每个业务项占三分之一宽度，减去间距 */
-    height: 100px;
-    margin: 10px; /* 上下左右间距 */
-    text-align: center;
-    background-color: #fff;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
-    border-radius: 8px; /* 圆角边框 */
+    margin: 10px;
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(33% - 40px);
+    min-height: 150px; /* 增加最小高度 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left; /* 文本左对齐 */
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service-item h3 {
+    font-size: 24px;
+    color: #333;
     margin-bottom: 10px;
-    font-size: 18px;
+    text-align: center; /* 标题居中对齐 */
 }
 
 .service-item p {
-    font-size: 14px;
+    font-size: 16px;
     color: #666;
 }
 
@@ -147,5 +131,40 @@ body {
 
 .footer p {
     margin: 5px 0;
+}
+
+/* 图片展示区样式 */
+.image-showcase {
+    width: 100%;
+    margin: 20px 0; /* 上下外边距 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.image-container {
+    display: flex;
+    gap: 20px; /* 图片之间的间距 */
+    max-width: 1200px; /* 容器最大宽度 */
+    width: 90%; /* 容器宽度 */
+    margin: 0 auto; /* 水平居中 */
+}
+
+.image-item {
+    flex: 1; /* 平均分配宽度 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    border-radius: 15px; /* 圆角 */
+    overflow: hidden; /* 隐藏溢出内容 */
+    transition: transform 0.3s ease; /* 过渡效果 */
+}
+
+.image-item:hover {
+    transform: translateY(-5px); /* 悬停时上移 */
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持图片比例并填充容器 */
 }
 
