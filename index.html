@@ -46,16 +46,78 @@
     <section class="image-showcase">
         <div class="image-container">
             <div class="image-item">
-                <img src="./images/slide-1.png" alt="T100系统功能展示图1">
+                <img src="./images/slide-1.png" alt="T100系统功能展示图1" onclick="openModal(this.src)">
             </div>
             <div class="image-item">
-                <img src="./images/slide-2.png" alt="T100系统功能展示图2">
+                <img src="./images/slide-2.png" alt="T100系统功能展示图2" onclick="openModal(this.src)">
             </div>
             <div class="image-item">
-                <img src="./images/slide-3.png" alt="T100系统功能展示图3">
+                <img src="./images/slide-3.png" alt="T100系统功能展示图3" onclick="openModal(this.src)">
             </div>
         </div>
     </section>
+    <!-- 模态框 -->
+    <div id="myModal" class="modal" onclick="closeModalOutside(event)">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+    <style>
+        /* 模态框样式 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        /* 模态框中的图片样式 */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        /* 关闭按钮样式，使其更明显 */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #ff0000; /* 改为红色，更醒目 */
+            font-size: 60px; /* 增大字体大小 */
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function openModal(imgSrc) {
+            var modal = document.getElementById('myModal');
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = "none";
+        }
+        function closeModalOutside(event) {
+            var modal = document.getElementById('myModal');
+            var modalContent = document.querySelector('.modal-content');
+            if (event.target === modal && event.target!== modalContent) {
+                closeModal();
+            }
+        }
+    </script>
    
 
     <!-- 业务介绍区 -->
